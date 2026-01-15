@@ -1,0 +1,53 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "cursor": {
+      "name": "Cursor (Proxy)",
+      "api": "http://localhost:4141/v1",
+      "models": {
+        "composer-1": {
+          "name": "Composer 1",
+          "limit": { "context": 200000, "output": 32000 },
+          "tool_call": true,
+          "attachment": true
+        },
+        "gpt-5.2-codex": {
+          "name": "GPT 5.2 Codex",
+          "limit": { "context": 128000, "output": 16000 },
+          "tool_call": true,
+          "attachment": true
+        },
+        "claude-4.5-sonnet": {
+          "name": "Claude 4.5 Sonnet",
+          "limit": { "context": 200000, "output": 16000 },
+          "tool_call": true,
+          "attachment": true
+        },
+        "claude-4-opus": {
+          "name": "Claude 4 Opus",
+          "limit": { "context": 200000, "output": 16000 },
+          "tool_call": true,
+          "attachment": true
+        },
+        "gemini-2.5-pro": {
+          "name": "Gemini 2.5 Pro",
+          "limit": { "context": 1000000, "output": 8192 },
+          "tool_call": true,
+          "attachment": true
+        },
+        "grok-3": {
+          "name": "Grok 3",
+          "limit": { "context": 128000, "output": 8192 },
+          "tool_call": true,
+          "attachment": true
+        },
+        "o4": {
+          "name": "O4",
+          "limit": { "context": 200000, "output": 100000 },
+          "tool_call": true,
+          "attachment": true
+        }
+      }
+    }
+  }
+}
